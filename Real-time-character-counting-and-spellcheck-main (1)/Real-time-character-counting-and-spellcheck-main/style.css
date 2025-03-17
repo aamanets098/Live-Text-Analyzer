@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Libre+Baskerville&family=Merriweather:wght@700&family=Work+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+body {
+    display: flex;
+    
+    align-items: center;
+    align-self: center;
+    background-image: url('https://media3.giphy.com/media/zTMRcvdM6FP6WHbl7U/200w.webp?cid=ecf05e47vqy2ae82j20192wjyurhe4z5l3byx64sc8iai858&ep=v1_gifs_search&rid=200w.webp&ct=g');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+.container {
+    padding: 30px;
+    max-width: 100%; 
+    
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: -0.2px;
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    max-width: 670px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.textarea {
+    width: 100%;
+    height: 316px;
+    padding: 18px;
+    resize: none;
+    box-shadow: 0 12px 48px 0px rgba(241, 4, 4, 0.514);
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.5px solid rgba(231, 233, 245);
+    border-radius: 16px;
+}
+
+.textarea:focus {
+    border: 0.3px solid rgb(43, 56, 0.3);
+    outline: none;
+}
+.textarea.highlighted-text {
+    background-color: #add8e6; 
+}
+
+
+p,
+textarea {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    line-height: 1.6;
+}
+
+
+
+.button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clear-button {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.save-button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.copy-button {
+    background-color: rgb(17, 166, 131);
+    color: rgb(255, 255, 255);
+}
+
+.load-button {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* Add spacing between buttons */
+.button:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.counter-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Highlight{
+    color: #fff;
+}
+
+
+/* Styles for Change Character Limit Input */
+#limit-input {
+    margin-top: 1px;
+    padding: 1px;
+    border: 1px solid #3498db;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #555;
+    width: 50px; 
+    transition: border-color 0.3s ease-in-out;
+    display: flex;
+    position: relative;
+}
+
+#limit-input:focus {
+    border-color: #2980b9;
+}
+
+/* Styles for Change Character Limit Button */
+#change-limit-button {
+    display: flex;
+    position: relative;
+    margin-top: 1px;
+    padding: 2px 4px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#change-limit-button:hover {
+    background-color: #2980b9;
+}
+
+.limit{
+    color: #fff;
+}
+
+
+
+.functionality-container{
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px; 
+    }
+    

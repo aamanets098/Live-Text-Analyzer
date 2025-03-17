@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Char Counting</title>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Real Time Counting Character
+        </h2>
+        <p>Check your English text for grammar, spelling, and punctuation errors with web Tech real-time character counter.</p>
+        <textarea id="textarea" class="textarea" placeholder="Type here..." maxlength="150"></textarea>
+
+        <div class="button-container">
+            <button class="button clear-button" onclick="clearText()">Clear Text</button>
+            <button class="button save-button" onclick="saveTextLocally()">Save Text Locally</button>
+            <button class="button load-button" onclick="loadTextLocally()">Load Text</button>
+            <button class="button copy-button" onclick="copyText()">Copy Text</button>
+        </div>
+        
+        
+
+        <div class="counter-container">
+            <p>Total character : <span id="total-count">0</span></p>
+            <p>Remaining : <span id="remaining-count">150</span></p>
+        </div>
+
+
+        <div class="functionality-container">
+
+        <!--functionality added to choose highlight color-->
+        <label for="color-picker" class="Highlight">Choose Highlight Color:</label>
+        <input type="color" id="color-picker" value="#FFFF00">
+
+        <!---functionality added to change character limit-->
+        <label for="limit-input" class="limit">Change Character Limit:</label>
+        <input type="number" id="limit-input" min="1" value="150">
+        <button id="change-limit-button" onclick="changeCharacterLimit()">Change Limit</button>
+        
+        </div>
+
+        <!-- <button id="save-button">Save Text Locally</button> -->
+
+
+
+    </div>
+    <script src="index.js"></script>
+
+    
+</body>
+</html>
